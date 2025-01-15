@@ -1,11 +1,44 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import TopNav from "../components/TopNav.astro";
+import Socialpill from "../components/Socialpill.astro";
+import GithubIcon from "../components/icons/GithubIcon.astro";
+import FreelancerIcon from "../components/icons/Freelancer.astro";
+import Mailicon from "../components/icons/Mail.astro";
+import LinkedinIcon from "../components/icons/LinkedinIcon.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+  <TopNav />
+  <div class="max-w-[90%] mx-auto flex justify-between mb-28">
+    <section class="max-w-[50%] mt-20">
+      <h2 class="text-6xl pb-8">Soy <span class="font-bold">Joseph!</span></h2>
+      <p class="text-2xl text-pretty w-[90%]">
+        "programador freelancer especializado en Fronted y backend: el tipo que
+        hace que todo funcione detrás de escena, aunque nadie lo vea... excepto
+        cuando falla."
+      </p>
+      <nav class="flex gap-x-4 mt-6">
+        <Socialpill>
+          <LinkedinIcon class="size-6" />Linkedin
+        </Socialpill>
+        <Socialpill href="https://github.com/1amJoseph">
+          <GithubIcon class="size-6" />Github
+        </Socialpill>
+        <Socialpill href="https://www.freelancer.com/u/LiterallyJoseph">
+          <FreelancerIcon class="size-6" />Freelancer
+        </Socialpill>
+        <Socialpill>
+          <Mailicon class="size-6" />joseph.dev.cigarettes@gmail.com
+        </Socialpill>
+      </nav>
+    </section>
+    <section class="flex items-center max-w-[50%] justify-end"></section>
+  </div>
+  <div class="max-w-[90%] mx-auto">
+    <h2 class="text-4xl font-semibold">Proyectos</h2>
+  </div>
 </Layout>
