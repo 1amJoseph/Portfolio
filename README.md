@@ -96,7 +96,7 @@ Optimized files will be generated in the `./dist/` folder
 - Email: dev.n.bedroom@gmail.com
 - LinkedIn: https://www.linkedin.com/in/josephherrera1/
 - GitHub: https://github.com/1amJoseph
-- Portfolio: [your-site.com]
+- Portfolio: https://ucalledjoseph.vercel.app/
 
 ## 🙏 Acknowledgments
 
