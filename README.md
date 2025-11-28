@@ -104,7 +104,7 @@ Special thanks to [SVGL](https://svgl.app/) for their amazing SVG icon library.
 
 ## 📄 License
 
-© 2024 Joseph Herrera. All rights reserved.
+© 2025 Joseph Herrera. All rights reserved.
 This project is for portfolio purposes only. The code, design, and content are proprietary and may not be copied, distributed, or used without explicit permission.
 
 ---
