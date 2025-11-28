@@ -1,0 +1,63 @@
+---
+import SocialPill from "./SocialPill.astro";
+
+import GithubIcon from "../assets/icons/Github.astro";
+import LinkedInIcon from "../assets/icons/LinkedIn.astro";
+import DiscordIcon from "../assets/icons/Discord.astro";
+import GmailIcon from "../assets/icons/Gmail.astro";
+---
+
+<main class="mt-52 md:mt-60 lg:mt-64 xl:mt-72">
+  <section class="fade-right">
+    <h1
+      class="text-center md:text-start text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold"
+    >
+      Hey! I'm Joseph.
+    </h1>
+    <p
+      class="text-center md:text-start md:w-xl xl:w-2xl text-pretty font-medium md:text-lg xl:text-xl text-slate-400 mt-4 max-w-xl mx-auto md:mx-0"
+    >
+      I'm a software developer specializing in building (and occasionally
+      designing) exceptional digital experiences.
+    </p>
+    <ul class="flex mt-6 gap-2 flex-wrap justify-center md:justify-start">
+      <SocialPill href="https://github.com/1amJoseph">
+        <GithubIcon class="size-6" /> Github
+      </SocialPill>
+      <SocialPill href="https://www.linkedin.com/in/josephherrera1/">
+        <LinkedInIcon class="size-5" /> LinkedIn
+      </SocialPill>
+
+      <button
+        id="Emailbutton"
+        class="flex items-center gap-x-1.5 px-2.5 py-1.5 border border-white/15 rounded-full bg-white/2.5 hover:bg-white/7.5 transition hover:scale-105 cursor-pointer"
+      >
+        <GmailIcon class="size-5" /> Email
+      </button>
+    </ul>
+  </section>
+  <div
+    id="copiedMessage"
+    class="fixed bottom-6 right-6 bg-white/1 border border-white/5 backdrop-blur-xs text-white px-4 py-2 rounded-lg
+    opacity-0 pointer-events-none transition-opacity duration-500 z-99999"
+  >
+    Correo copiado.
+  </div>
+</main>
+
+<script>
+  addEventListener("DOMContentLoaded", () => {
+    const emailButton = document.getElementById("Emailbutton");
+    const copiedMessage = document.getElementById("copiedMessage");
+    if (!emailButton || !copiedMessage) return;
+
+    emailButton.addEventListener("click", () => {
+      navigator.clipboard.writeText("dev.n.bedroom@gmail.com").then(() => {
+        copiedMessage.style.opacity = "1";
+        setTimeout(() => {
+          copiedMessage.style.opacity = "0";
+        }, 2500);
+      });
+    });
+  });
+</script>

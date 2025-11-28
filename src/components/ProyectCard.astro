@@ -1,0 +1,75 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  image: string;
+  github: string;
+  tech: string[];
+}
+
+const { title, description, image, github, tech } = Astro.props;
+---
+
+<article
+  class="bg-white/5 backdrop-blur-xs border border-zinc-800 rounded-2xl overflow-hidden hover:-translate-y-1 hover:border-zinc-700 transition"
+>
+  <img src={image} alt={title} class="w-full h-60 object-top object-cover" />
+
+  <div class="p-5">
+    <h3 class="text-xl font-semibold mb-2">{title}</h3>
+    <p class="text-zinc-400 text-sm mb-4">{description}</p>
+
+    <!-- Tech Stack -->
+    <div class="flex flex-wrap gap-2 mb-4">
+      {
+        tech.map((t: string) => (
+          <span class="px-2 py-1 text-xs bg-zinc-800 rounded-md text-zinc-300">
+            {t}
+          </span>
+        ))
+      }
+    </div>
+
+    <!-- GitHub Link -->
+    <a
+      href={github}
+      target="_blank"
+      class="inline-flex items-center gap-2 text-sm text-zinc-300 hover:text-white transition"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        class="w-4 h-4"
+      >
+        <path
+          d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 
+             9.8 8.205 11.387.6.113.82-.258.82-.577 
+             0-.285-.01-1.04-.015-2.04
+             -3.338.724-4.042-1.61-4.042-1.61
+             -.546-1.387-1.333-1.757-1.333-1.757
+             -1.09-.745.083-.729.083-.729
+             1.205.084 1.84 1.237 1.84 1.237
+             1.07 1.835 2.809 1.305 3.495.998
+             .108-.776.418-1.305.762-1.605
+             -2.665-.3-5.466-1.332-5.466-5.93 
+             0-1.31.47-2.38 1.236-3.22
+             -.135-.303-.54-1.523.105-3.176 
+             0 0 1.005-.322 3.3 1.23
+             .96-.267 1.98-.399 3-.405 
+             1.02.006 2.04.138 3 .405 
+             2.28-1.552 3.285-1.23 3.285-1.23 
+             .645 1.653.24 2.873.12 3.176 
+             .765.84 1.23 1.91 1.23 3.22 
+             0 4.61-2.805 5.625-5.475 5.92 
+             .42.36.81 1.096.81 2.22 
+             0 1.606-.015 2.896-.015 3.286 
+             0 .315.21.69.825.57C20.565 
+             22.092 24 17.592 24 12.297 
+             c0-6.627-5.373-12-12-12"
+        ></path>
+      </svg>
+      View on GitHub
+    </a>
+  </div>
+</article>

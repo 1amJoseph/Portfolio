@@ -1,0 +1,130 @@
+---
+import Github from "../assets/icons/Github.astro";
+import ExPill from "./ExPill.astro";
+import AstroIcon from "../assets/icons/Astro.astro";
+import JavaIcon from "../assets/icons/Java.astro";
+import CPPIcon from "../assets/icons/CPP.astro";
+import SpringIcon from "../assets/icons/Spring.astro";
+import TailwindIcon from "../assets/icons/Tailwind.astro";
+import Javascripticon from "../assets/icons/Javascript.astro";
+import VSCIcon from "../assets/icons/VSC.astro";
+import IntellijIcon from "../assets/icons/Intellij.astro";
+import CiscoIcon from "../assets/icons/Cisco.astro";
+import NodejsIcon from "../assets/icons/Nodejs.astro";
+import GitIcon from "../assets/icons/Git.astro";
+import PythonIcon from "../assets/icons/Python.astro";
+import MySQLIcon from "../assets/icons/MySQL.astro";
+import BlenderIcon from "../assets/icons/Blender.astro";
+---
+
+<div id="about" class="mt-32 pt-20">
+  <h2
+    class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold mb-10 fade-up text-center"
+  >
+    About Me
+  </h2>
+  <div class="flex flex-col md:flex-row gap-8 md:justify-between">
+    <section
+      class="bg-white/5 backdrop-blur-xs border p-4 border-zinc-800 rounded-2xl fade-right hover:border-zinc-700 transition hover:translate-x-1"
+    >
+      <p
+        class="md:text-[14px] xl:text-lg text-slate-300 text-pretty lg:w-xs xl:w-xl max-w-xl p-6"
+      >
+        Hello! I'm a passionate web developer with a love for creating dynamic
+        and user-friendly websites. With experience in various web technologies,
+        I enjoy bringing ideas to life through code. When I'm not coding, I love
+        exploring new tech trends and enhancing my skills.
+      </p>
+    </section>
+    <section
+      class="h-fit bg-white/5 backdrop-blur-xs border p-6 border-zinc-800 rounded-2xl overflow-hidden hover:-translate-x-1 hover:border-zinc-700 transition fade-left md:w-lg"
+    >
+      <h3 class="lg:text-xl xl:text-2xl italic font-semibold mb-4">
+        Academic career
+      </h3>
+
+      <p class="md:text-[14px] xl:text-lg lg:text-base text-wrap">
+        <strong> - Technical high school in software development</strong>
+        <br />
+        <span class="text-slate-400">
+          Central America School (2024 - Current)</span
+        >
+      </p>
+    </section>
+  </div>
+  <div class="mt-16 fade-up">
+    <h3 class="text-center font-semibold mb-4 lg:text-3xl xl:text-4xl">
+      Skills & Tools
+    </h3>
+    <div class="flex flex-col md:flex-row gap-y-4 md:justify-between">
+      <section class="md:w-xl">
+        <h4 class="text-center mb-2 lg:text-base xl:text-lg font-medium">
+          Programming Languages
+        </h4>
+        <div class="flex gap-2 flex-wrap">
+          <ExPill>
+            <JavaIcon class="size-5" /> Java
+          </ExPill>
+          <ExPill>
+            <CPPIcon class="size-5" /> C++
+          </ExPill>
+          <ExPill>
+            <Javascripticon class="size-5" /> JavaScript
+          </ExPill>
+          <ExPill>
+            <PythonIcon class="size-5" /> Python
+          </ExPill>
+          <ExPill>
+            <MySQLIcon class="size-5" /> MySQL
+          </ExPill>
+        </div>
+      </section>
+
+      <section class="md:w-xl">
+        <h4 class="text-center mb-2 lg:text-base xl:text-lg font-medium">
+          Frameworks & Libraries
+        </h4>
+        <div class="flex gap-2 flex-wrap">
+          <ExPill>
+            <AstroIcon class="size-5" /> Astro
+          </ExPill>
+          <ExPill>
+            <SpringIcon class="size-5" /> Spring Boot
+          </ExPill>
+          <ExPill>
+            <TailwindIcon class="size-5" /> Tailwind CSS
+          </ExPill>
+          <ExPill>
+            <NodejsIcon class="size-5" /> Node.js
+          </ExPill>
+        </div>
+      </section>
+
+      <section class="md:w-xl">
+        <h4 class="text-center mb-2 lg:text-base xl:text-lg font-medium">
+          Tools
+        </h4>
+        <div class="flex gap-2 flex-wrap">
+          <ExPill>
+            <Github class="size-5" /> GitHub
+          </ExPill>
+          <ExPill>
+            <IntellijIcon class="size-5" /> IntelliJ IDEA
+          </ExPill>
+          <ExPill>
+            <VSCIcon class="size-5" /> VS Code
+          </ExPill>
+          <ExPill>
+            <CiscoIcon class="size-5" /> Packet Tracer
+          </ExPill>
+          <ExPill>
+            <GitIcon class="size-5" /> Git
+          </ExPill>
+          <ExPill>
+            <BlenderIcon class="size-5" /> Blender
+          </ExPill>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
