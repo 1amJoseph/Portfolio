@@ -1,36 +1,72 @@
-# Astro Starter Kit: Basics
+# 🚀 Personal Portfolio
 
-```sh
-npm create astro@latest -- --template basics
-```
+My personal portfolio built with Astro, showcasing my projects, skills, and experience as a developer.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## ✨ Features
 
-## 🚀 Project Structure
+- 🎨 Modern and responsive design
+- ⚡ Optimized performance with Astro
+- 📱 Fully responsive
+- 🎯 SEO optimized
+- ♿ Accessible
+- 🚀 Ultra-fast loading
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🛠️ Built With
+
+- [Astro](https://astro.build) - Modern web framework
+- HTML5 & CSS3
+- JavaScript
+- Tailwind
+
+## 📁 Project Structure
 
 ```text
 /
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
+├── public/              # Static files
+│   ├── preview.png
+│   ├── docs/
+│   └── images/
+├── src/
+│   ├── assets/         # Assets processed by Astro
+│   ├── components/     # Reusable components
+│   ├── content/     # Proyects list
+│   ├── layouts/        # Page layouts
+│   ├── pages/          # Site pages
+│   └── styles/         # Global styles
 └── package.json
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🚀 Getting Started
 
-## 🧞 Commands
+### Prerequisites
 
-All commands are run from the root of the project, from a terminal:
+- Node.js 18+ installed
+- npm or pnpm
+
+### Installation
+
+1. Clone the repository
+
+```sh
+git clone https://github.com/1amJoseph/Portfolio.git
+cd Portfolio
+```
+
+2. Install dependencies
+
+```sh
+npm install
+```
+
+3. Start the development server
+
+```sh
+npm run dev
+```
+
+4. Open your browser at `http://localhost:4321`
+
+## 📜 Available Commands
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
@@ -41,6 +77,31 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## 🌐 Deployment
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+This site is optimized for deployment on:
+
+- [Vercel](https://vercel.com)
+
+### Production Build
+
+```sh
+npm run build
+```
+
+Optimized files will be generated in the `./dist/` folder
+
+## 📧 Contact
+
+- Email: dev.n.bedroom@gmail.com
+- LinkedIn: https://www.linkedin.com/in/josephherrera1/
+- GitHub: https://github.com/1amJoseph
+- Portfolio: [your-site.com]
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+⭐ If you liked this portfolio, feel free to star the repository!
