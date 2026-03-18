@@ -52,3 +52,15 @@
 .fade-up {
     animation: fade-up 0.75s ease-in-out forwards;
 }
+
+@keyframes linkhover {
+    from {
+        transform: translateY(-10px);
+    } to {
+        transform: translateY(0px);
+    }
+}
+
+.link-hover {
+    animation: linkhover 0.35s ease-in-out forwards;
+}

@@ -18,10 +18,17 @@
 
     <!-- Navegación desktop (oculta en tablet/móvil) -->
     <nav class="hidden md:flex gap-x-5 font-semibold text-slate-50">
-      <a href="#" class="transition hover:scale-105">Home</a>
-      <a href="#proyects" class="transition hover:scale-105">Projects</a>
-      <a href="#about" class="transition hover:scale-105">About</a>
-      <a href="#contact" class="transition hover:scale-105">Contact</a>
+      <a href="#" class="transition duration-300 hover:-translate-y-0.5">Home</a
+      >
+      <a href="#proyects" class="transition duration-300 hover:-translate-y-0.5"
+        >Projects</a
+      >
+      <a href="#about" class="transition duration-300 hover:-translate-y-0.5"
+        >About</a
+      >
+      <a href="#contact" class="transition duration-300 hover:-translate-y-0.5"
+        >Contact</a
+      >
     </nav>
   </header>
 
@@ -68,7 +75,7 @@
           mobileMenu.classList.remove(
             "opacity-100",
             "visible",
-            "translate-y-0"
+            "translate-y-0",
           );
           mobileMenu.classList.add("opacity-0", "invisible", "-translate-y-4");
 
@@ -82,7 +89,7 @@
           mobileMenu.classList.remove(
             "opacity-0",
             "invisible",
-            "-translate-y-4"
+            "-translate-y-4",
           );
           mobileMenu.classList.add("opacity-100", "visible", "translate-y-0");
 
@@ -101,7 +108,7 @@
           mobileMenu.classList.remove(
             "opacity-100",
             "visible",
-            "translate-y-0"
+            "translate-y-0",
           );
           mobileMenu.classList.add("opacity-0", "invisible", "-translate-y-4");
 
@@ -123,7 +130,7 @@
           "backdrop-blur-xs",
           "rounded-xl",
           "mt-2",
-          "mx-2"
+          "mx-2",
         );
         topnav.classList.remove("border-transparent");
       } else {
@@ -133,7 +140,7 @@
           "backdrop-blur-xs",
           "rounded-xl",
           "mt-2",
-          "mx-2"
+          "mx-2",
         );
         topnav.classList.add("border-transparent");
       }
@@ -217,7 +224,7 @@
         "backdrop-blur-xs",
         "rounded-xl",
         "mt-2",
-        "mx-2"
+        "mx-2",
       );
       topnav.classList.remove("border-transparent");
     }
